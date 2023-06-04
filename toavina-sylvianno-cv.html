@@ -112,14 +112,47 @@
 
         ul li{
             padding-left: 20px;
+            margin-bottom: 5px;
         }
 
         .droite{
+            display: flex;
+            flex-direction:column;
             background: var(--coleur-secondaire);
             width: calc(100vw - 140px);
             height: 500px;
         }
 
+        h2{
+            color: var(--coleur-primaire);
+            text-transform: uppercase;
+            text-decoration: underline;
+            padding-left: 40px;
+        }
+
+        .date{
+            color: var(--coleur-de-fond-primaire);
+            padding-left: 50px;
+            font-size: large;
+        }
+
+        .diplomes-formations{
+            display: flex;
+        }
+        
+        .descri{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+        
+
+        h3, .descri-formation{
+            color: var(--coleur-de-fond-primaire);
+            text-transform: capitalize;
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+        }
     </style>
 
     <div class="conteneur-cv">
@@ -136,7 +169,7 @@
             </div>
             <div class="conteneur-motivation">
                 <p class="motivation">
-                    Etudiant titulaire de licence et <span class="filiere">Mathématiques - Informatique</span>,
+                    Etudiant titulaire de licence en <span class="filiere">Mathématiques - Informatique</span>,
                     je suis passionné par le developpement web et la programmation
                 </p>
             </div>
@@ -164,7 +197,42 @@
             </section>
             
             <section class="droite">
-                
+                <h2>diplomes et formations</h2>
+                <div class="diplomes-formations">
+                    <p class="date">2023 :</p>
+                    <div class="descri">
+                        <h3>orange digital center</h3>
+                        <p class="descri-formation" >
+                            formation administrateur réseaux et système sous linux
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experiences">
+                    <h2>Experiences professionnelles</h2>
+                    <p class="date">2022</p>
+                    <div class="descri">
+                        <h3>Université d'Antananarivo</h3>
+                        <p>
+                            Licence en <span class="filiere">Mathématiques - Informatique </span>
+                        </p>                    
+                    </div>
+                    <h2>Eperiences professionnelles</h2>
+                    <p class="date">2022</p>
+                    <div class="descri">
+                        <h3>Université d'Antananarivo</h3>
+                        <p>
+                            Licence en <span class="filiere">Mathématiques - Informatique </span>
+                        </p>      
+                </div>
+
+                <div class="competences">
+                    <h2>Competences personnelles</h2>
+                </div>
+
+                <div class="centre-interet">
+                    <h2>Centre d'interet</h2>
+                </div>
             </section>
         </main>
     </div>
