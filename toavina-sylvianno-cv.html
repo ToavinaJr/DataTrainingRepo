@@ -7,7 +7,7 @@
 <body>
     <style>
         :root{
-            --coleur-primaire: #047059;
+            --coleur-primaire: #028d6f;
             --coleur-secondaire: #f7f7f7;
             --coleur-de-fond-primaire: rgb(7,7,7);
         }
@@ -80,7 +80,9 @@
             padding: 20px;
         }
 
-
+        .motivation{
+            font-size: 22px;
+        }
         
         .gauche{
             background: var(--coleur-de-fond-primaire);
@@ -94,8 +96,9 @@
             align-items: start;
             padding: 20px;
         }
-
+        
         .contact p{
+            border: solid 2px var(--coleur-secondaire);
             padding-left: 10px;
             background: var(--coleur-primaire);
             color: var(--coleur-de-fond-primaire);
@@ -120,7 +123,7 @@
             flex-direction:column;
             background: var(--coleur-secondaire);
             width: calc(100vw - 140px);
-            height: 500px;
+            height: 1000px;
         }
 
         h2{
@@ -136,7 +139,7 @@
             font-size: large;
         }
 
-        .diplomes-formations{
+        .conteneur{
             display: flex;
         }
         
@@ -145,7 +148,9 @@
             flex-direction: column;
             margin-left: 20px;
         }
-        
+        .descri p{
+            color: var(--coleur-de-fond-primaire);
+        }
 
         h3, .descri-formation{
             color: var(--coleur-de-fond-primaire);
@@ -198,7 +203,7 @@
             
             <section class="droite">
                 <h2>diplomes et formations</h2>
-                <div class="diplomes-formations">
+                <div class="conteneur">
                     <p class="date">2023 :</p>
                     <div class="descri">
                         <h3>orange digital center</h3>
@@ -210,21 +215,50 @@
 
                 <div class="experiences">
                     <h2>Experiences professionnelles</h2>
-                    <p class="date">2022</p>
-                    <div class="descri">
-                        <h3>Université d'Antananarivo</h3>
-                        <p>
-                            Licence en <span class="filiere">Mathématiques - Informatique </span>
-                        </p>                    
+                    <div class="conteneur">
+                        <p class="date">2022 :</p>
+                        <div class="descri">
+                            <h3>Université d'Antananarivo</h3>
+                            <p>
+                                Licence en <span class="filiere">Mathématiques - Informatique </span>
+                            </p>                    
+                        </div>
                     </div>
-                    <h2>Eperiences professionnelles</h2>
-                    <p class="date">2022</p>
-                    <div class="descri">
-                        <h3>Université d'Antananarivo</h3>
-                        <p>
-                            Licence en <span class="filiere">Mathématiques - Informatique </span>
-                        </p>      
-                </div>
+                    <div class="conteneur">
+                        <p class="date">2017 :</p>
+                        <div class="descri">
+                            <h3>Lycée NANISANA</h3>
+                            <p>BACC Série C</p>                    
+                        </div>
+                    </div>
+                    <div class="conteneur">
+                        <p class="date">2013 :</p>
+                        <div class="descri">
+                            <h3>CEG NANISANA</h3>
+                            <p>
+                                BEPC
+                            </p>                    
+                        </div>
+                    </div>
+                    <div class="conteneur">
+                        <p class="date">2010 :</p>
+                        <div class="descri">
+                            <h3>EPP NANISANA</h3>
+                            <p>
+                                CEPE
+                            </p>                    
+                        </div>
+                    </div>
+                    <h2>Experiences professionnelles</h2>
+                    <div class="conteneur">
+                        <p class="date">2022 :</p>
+                        <div class="descri">
+                            <h3>Université d'Antananarivo</h3>
+                            <p>
+                                Licence en <span class="filiere">Mathématiques - Informatique </span>
+                            </p>      
+                        </div>
+                    </div>
 
                 <div class="competences">
                     <h2>Competences personnelles</h2>
