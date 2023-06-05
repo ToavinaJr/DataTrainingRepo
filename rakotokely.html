@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kely maditra CV</title>
+</head>
+<body>
+    <style>
+        :root{
+            --coleur-primaire: #8d8402;
+            --coleur-secondaire: #f7f7f7;
+            --coleur-de-fond-primaire: rgb(7,7,7);
+        }
+        
+        .arrondi{
+            width: 100px;
+            height: 100px;
+            border: solid 2px var(--coleur-secondaire);
+            border-radius: 50%;
+        }
+
+        .txt-primary{
+            color: var(--coleur-primaire);
+        }
+
+        .txt-secondary{
+            color: var(--coleur-secondaire);
+        }
+
+        .txt-thirdly{
+            color: var(--coleur-de-fond-primaire);
+        }
+
+        .txt-primary{
+            color: var(--coleur-primaire);
+        }
+
+        .bg-primary{
+            background: var(--coleur-primaire);
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+            color: #fff;
+        }
+        
+        .conteneur-cv{
+            display: flex;
+            flex-direction: column;
+            background: var(--coleur-de-fond-primaire);
+        }
+
+        .rounded{
+            border-radius: 10px;
+        }
+
+        .circle{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .description, main, section{
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-around; */
+        }
+        
+        .photo{
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .description h1{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        main{
+            display: flex;
+            flex-direction: row;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .name{
+            text-transform: uppercase;
+            color: #eee;
+        }
+
+        .first-name{
+            text-transform: capitalize;
+            color: var(--coleur-primaire);
+            margin-bottom: 20px;
+        }
+
+        .status{
+            text-transform: uppercase;
+            color: #917979;
+        }
+
+        .conteneur-motivation{
+            margin: 0;
+            background: var(--coleur-primaire);
+            color: var(--coleur-de-fond-primaire);
+            width: 100%;
+            padding: 0;
+        }
+
+        .motivation{
+            font-size: 22px;
+            padding: 10px 50px;
+        }
+        
+        section{
+            margin: 10px 0;
+        }
+
+        .gauche{
+            background: var(--coleur-de-fond-primaire);
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 500px;
+        }
+
+        .contact, .languages, .technologies{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 20px;
+        }
+        
+        .contact p, .languages p, .technologies p{
+            border: solid 2px var(--coleur-secondaire);
+            padding-left: 10px;
+            background: var(--coleur-primaire);
+            color: var(--coleur-de-fond-primaire);
+            border-radius: 10px;
+            font-size: 18px;
+            text-transform: uppercase;
+            width: 150px;
+        }
+        
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li{
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+        .competences-item, .centre-interet-item{
+            color: var(--coleur-de-fond-primaire);
+        }
+
+        #mail{
+            text-decoration: none;
+            color: var(--coleur-primaire);
+        }
+        
+        .droite{
+            display: flex;
+            flex-direction:column;
+            background: var(--coleur-secondaire);
+            width: calc(100vw - 140px);
+            height: 1000px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        h2{
+            display: inline;
+            color: var(--coleur-primaire);
+            text-transform: uppercase;
+            text-decoration: underline;
+            margin-left: 40px;
+            width: fit-content;
+        }
+
+        .date{
+            color: var(--coleur-de-fond-primaire);
+            padding-left: 50px;
+            font-size: large;
+        }
+
+        .conteneur{
+            display: flex;
+        }
+        
+        .descri{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .descri p{
+            color: var(--coleur-de-fond-primaire);
+        }
+
+        h3, .descri-formation{
+            color: var(--coleur-de-fond-primaire);
+            text-transform: capitalize;
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+        }
+
+        .competences, .centre-interet{
+            margin-left: 0;
+        }
+
+        .competences ul, .centre-interet ul{
+            padding-left: 40px;
+        }
+
+        table{
+        margin-left: 300px;
+        }
+
+        th, tr, td{
+          width: 200px;
+          border: dashed 2px #000;
+          text-align: center;
+        }
+
+    </style>
+
+    <div class="conteneur-cv">
+        <div class="apropos">
+            <div class="description">                
+                <div class="photo">
+                    <img class="  arrondi" src="images\rakoto_kely.jpg" alt="">
+                </div>
+                <h1   >
+                    <span class="name">RAKOTO</span>
+                    <span class="first-name">kely maditra</span>
+                    <span class="status">Chanteur</span>
+                </h1>
+            </div>
+            <div class="conteneur-motivation">
+                <p class="motivation">
+                    Un gamin qui aime chanter <br>
+                    La musique c'est toute ma vie <br>
+                    Je reve de percer sur la scène internationale 
+                </p>
+            </div>
+        </div>
+
+        <main>
+            <section class="gauche">
+                <div class="contact">
+                    <p   >COnTACt</p>
+                    <ul>
+                        <li>+261 33 333 33 333</li>
+                        <li> <a id="mail" href="kelymaditra@gmail.com">kelymaditra@gmail.com</a></li>
+                        <li>101 253 007 000 </li>
+                        <li>II 25 M ANDRAVOAHANGY</li>
+                    </ul>
+                </div>
+                <div class="technologies">
+                    <p>Instruments</p>
+                    <ul>
+                        <li>Guitare</li>
+                        <li>Piano</li>
+                        <li>Valiha</li>
+                    </ul>                    
+                </div>
+                <div class="languages">
+                    <p   >languages</p>
+                    <ul>
+                        <li>Francais</li>
+                        <li>Anglais</li>
+                    </ul>                        
+                </div>
+            </section>
+            
+            <section class="droite">
+                <h2   >diplomes et formations</h2>
+                <div class="conteneur">
+                    <p class="date">2023 :</p>
+                    <div class="descri">
+                        <h3>orange digital center</h3>
+                        <p class="descri-formation" >
+                            formation administrateur réseaux et système sous linux
+                        </p>
+                    </div>
+                </div>
+
+                <div class="conteneur">
+                    <p class="date">2022 :</p>
+                    <div class="descri">
+                        <h3>Université d'Antananarivo</h3>
+                        <p>
+                            Licence en <span class="filiere">Littérature</span>
+                        </p>                    
+                    </div>
+                </div>
+                <div class="conteneur">
+                    <p class="date">2017 :</p>
+                    <div class="descri">
+                            <h3>Lycée Andohalo</h3>
+                            <p>Baccalauréat Série A</p>                    
+                    </div>
+                    </div>
+                    <div class="conteneur">
+                        <p class="date">2013 :</p>
+                        <div class="descri">
+                            <h3>CEG Avaradoha</h3>
+                            <p>
+                                Brevet d'Etude Première Cycle (<abbr title="Brevet d'Etude Première Cycle">BEPC</abbr>)
+                            </p>                    
+                        </div>
+                    </div>
+                    <div class="conteneur">
+                        <p class="date">2010 :</p>
+                        <div class="descri">
+                            <h3>EPP NANISANA</h3>
+                            <p>
+                                Certificat d'Etude Primaire Elementaire (<abbr>CEPE</abbr>)
+                            </p>                    
+                        </div>
+                    </div>
+                    <h2   >Experiences professionnelles</h2>
+                    <div class="conteneur">
+                        <p class="date">2019 - 2023 :</p>
+                        <div class="descri">
+                            <h3>Beat Maker chez Mozika adala label</h3>
+                            <p>
+                                Responsable de creation d'instruments
+                                lors des prises de song.
+                            </p>      
+                        </div>
+                    </div>
+
+                <div class="descri competences">
+                    <h2   >Competences personnelles</h2>
+                    <ul class="competences-list">
+                        <li class="competences-item">Aptitude à travailler sous préssion</li>
+                        <li class="competences-item">Rigueur et esprit d'équipe</li>
+                        <li class="competences-item">Sens de l'écoute et de l'organisation</li>
+                    </ul>
+                </div>
+
+                <div class="descri centre-interet">
+                    <h2  >Centre d'interet</h2>
+                    <ul class="centre-interet-list">
+                        <li class="centre-interet-item">Rugby</li>
+                        <li class="centre-interet-item">Lire</li>
+                        <li class="centre-interet-item">Marathon</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+ 
+    <footer>
+        <h2 class="txt-primary">
+            Voici une de liste CV qui pourra vous interesser<br>
+            veuillez cliquer sur l'image pour voir le cv!
+        </h2>
+
+        <table class="rounded bg-thirdly txt-thirdly">
+            <thead>
+                <th>Profil</th>
+                <th>Son nom</th>
+                <th>Apropos</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="rakotokely.html">
+                            <img class="img circle" src="images/rakoto_kely.jpg" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <p>RAKOTO Kely Maditra</p>
+                    </td>
+                    <td>
+                        <p>Chanteur</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="toavina_sylvianno_cv.html">
+                            <img class="img circle" src="images/profil.png" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <p>Toavina Sylvianno</p>
+                    </td>
+                    <td>
+                        <p>Etudiant</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>    
+
+</body>
+</html>
