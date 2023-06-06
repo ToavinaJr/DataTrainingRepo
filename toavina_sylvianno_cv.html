@@ -9,7 +9,7 @@
 <body>
 <style>
     :root{
-        --coleur-primaire: #028d6f;
+        --color-primary: #028d6f;
         --color-secondary: rgb(7,7,7); 
          --color-thirdly: #f7f7f7;
         --font-big: 32px;
@@ -53,7 +53,7 @@
     }
 
     .bg-primary{
-        background: var(--coleur-primaire)
+        background: var(--color-primary)
     }
 
     .bg-secondary{
@@ -65,7 +65,7 @@
     }
 
     .txt-primary{
-        color: var(--coleur-primaire);
+        color: var(--color-primary);
     }
 
     .txt-secondary{
@@ -79,11 +79,12 @@
     img{
         width: 100px;
         height: 100px;
-        border: solid 2px var(--color-thirdly);
+        border: solid 5px var(--color-primary);
     }
 
     header{
         padding: 20px;
+        width: 100%;
     }
 
     .about{
@@ -100,6 +101,18 @@
 
     .first-name, .status{
         text-transform: capitalize;
+    }
+
+    .container-motivation{
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .motivation{
+        font-size: 22px;
+        padding: 10px 50px;
     }
 
     .left{
@@ -210,6 +223,10 @@
         margin-top: 30px;
     }
 
+    footer h2{
+        margin-left: 310px;
+    }
+
     table{
         margin-left: 300px;
         margin-top: 30px;
@@ -223,15 +240,25 @@
 </style>
 
 <div class="cv-container flex-column bg-secondary">
-    <header class="bg-secondary flex-row">
-        <div class="img-">
-            <img class="circle" src="images/profil.png" alt="profil not found">
+    <header class="bg-secondary flex-column">
+        <div class="flex-row">
+            <div class="img">
+                <img class="circle" src="profil.png" alt="profil not found">
+            </div>
+            <div class="about flex-column">
+                <span class="txt-primary name">randriamihaingoson</span>
+                <span class="txt-thirdly first-name">toavina sylvianno</span>
+                <span class="status txt-primary">etudiant</span>
+            </div>
         </div>
-        <div class="about flex-column">
-            <span class="txt-primary name">randriamihaingoson</span>
-            <span class="txt-thirdly first-name">toavina sylvianno</span>
-            <span class="status txt-primary">etudiant</span>
+        <div class="container-motivation bg-primary">
+            <p class="motivation">
+                Etudiant en Mathématiques informatiques et passioné par le monde du numérique<br>
+                Je reve de d'etre un <span class="txt-thirdly">Développeur Full Stack Web</span><br>
+                Et d' élargir mes connaissances que ce soit en IT ou en Mathématiques
+            </p>
         </div>
+        
     </header>
 
     <main class="flex-row bg-primary">
@@ -350,8 +377,8 @@
                                 CEG NANISANA
                             </p>
                             <p class="info">
-                                Brevet d'étude de la première 
-                                cycle
+                                Brevet d'Etude de la Première 
+                                Cycle
                             </p>
                         </div>
                     </div>
@@ -364,8 +391,8 @@
                                 Epp    NANISANA
                             </p>
                             <p class="info">
-                                Certificat d'étude primaire 
-                                élémentaire
+                                Certificat d'Etude Primaire
+                                Elémentaire
                             </p>
                         </div>
                     </div>
@@ -406,6 +433,24 @@
                     
                     </div>                    
                 </div>
+
+                <div class="curcus">
+                    <h2 class="txt-primary">Centre d'interet :</h2>
+                    <div class="curcus-info flex-column">
+                        <ul class="skills-list">
+                            <li class="skills-list-item">
+                                <span>Football</span>
+                            </li>
+                            <li class="skills-list-item">
+                                <span>Echecs</span>
+                            </li>
+                            <li class="skills-list-item">
+                                <span>Jeux vidéo</span>
+                            </li>                    
+                        </ul>
+                    
+                    </div>                    
+                </div>
             </div>
         </section>
     </main>
@@ -413,7 +458,7 @@
     <footer>
         <h2 class="txt-primary">
             Voici une de liste CV qui pourra vous interesser <br>
-            veuillez cliquer sur l'image pour voir le cv!
+            Veuillez cliquer sur l'image pour voir le cv!
         </h2>
 
         <table class="rounded bg-thirdly txt-secondary">
@@ -426,7 +471,7 @@
                 <tr>
                     <td>
                         <a href="rakotokely.html">
-                            <img class="img circle" src="images/rakoto_kely.jpg" alt="">
+                            <img class="img circle" src="rakoto_kely.jpg" alt="">
                         </a>
                     </td>
                     <td>
@@ -440,7 +485,7 @@
                 <tr>
                     <td>
                         <a href="toavina_sylvianno_cv.html">
-                            <img class="img circle" src="images/profil.png" alt="">
+                            <img class="img circle" src="profil.png" alt="">
                         </a>
                     </td>
                     <td>
